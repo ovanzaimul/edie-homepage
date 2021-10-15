@@ -1,0 +1,14 @@
+{
+  "name": "edie-homepage",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "sass ./sass/main.scss ./css/style.css -w"
+  },
+  "author": "Ovanzaimul",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "sass": "^1.43.2"
+  }
+}

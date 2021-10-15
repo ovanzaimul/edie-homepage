@@ -5,7 +5,177 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Edie-Homepage</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <link rel="stylesheet" href="/css/style.css" />
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <p class="header__logo">Edie</p>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Services</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Our Works</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Clients</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="home">
+      <p class="home__message">Unhappy with your website?</p>
+      <h2 class="heading-primary">We create beautiful and fast web services</h2>
+      <div class="home__hero">
+        <img src="/images/heroImage.jpg" alt="" class="home__img" />
+      </div>
+      <h2 class="heading-secondary">Story, emotion and purpose</h2>
+      <p class="home__text">
+        We help transform your ideas into real world applications that will outperform your toughest competition and
+        help you achieve your strategic goals in short period of time.
+      </p>
+
+      <form action="" class="contact">
+        <p class="contact__text">Want us to contact you?</p>
+        <input class="contact__input" type="email" placeholder="Email" />
+        <button class="contact__button">Join</button>
+      </form>
+    </section>
+
+    <section class="services">
+      <h3 class="heading-secondary">We offer high demand services</h3>
+
+      <div class="service">
+        <div class="service__icon-box">
+          <span class="material-icons service__icon">edit</span>
+        </div>
+        <h4 class="heading-tertiary">UI/UX Design</h4>
+        <p class="service__text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis
+          turpis.
+        </p>
+        <button class="btn btn--blue">Get started</button>
+      </div>
+
+      <div class="service">
+        <div class="service__icon-box">
+          <span class="material-icons service__icon">code</span>
+        </div>
+        <h4 class="heading-tertiary">Front End</h4>
+        <p class="service__text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis
+          turpis.
+        </p>
+        <button class="btn">Get started</button>
+      </div>
+      <div class="service">
+        <div class="service__icon-box">
+          <span class="material-icons service__icon">dns</span>
+        </div>
+        <h4 class="heading-tertiary">Back End</h4>
+        <p class="service__text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis
+          turpis.
+        </p>
+        <button class="btn">Get started</button>
+      </div>
+    </section>
+
+    <section class="projects">
+      <h3 class="heading-secondary">Good design means good business</h3>
+
+      <div class="project">
+        <div class="project__img-box">
+          <img src="/images/smarthome.jpg" alt="" class="project__img" />
+        </div>
+        <p class="project__tag">Full stack application</p>
+        <h4 class="project__title">Smart home dashboard</h4>
+      </div>
+
+      <div class="project">
+        <div class="project__img-box">
+          <img src="/images/onboard.png" alt="" class="project__img" />
+        </div>
+        <p class="project__tag">UX/UI design</p>
+        <h4 class="project__title">Onboard application</h4>
+      </div>
+
+      <div class="project">
+        <div class="project__img-box">
+          <img src="/images/booking.png" alt="" class="project__img" />
+        </div>
+        <p class="project__tag">Mobile application</p>
+        <h4 class="project__title">Booking system</h4>
+      </div>
+
+      <div class="project">
+        <div class="project__img-box">
+          <img src="/images/juice-product.png" alt="" class="project__img" />
+        </div>
+        <p class="project__tag">Front End application</p>
+        <h4 class="project__title">Juice product homepage</h4>
+      </div>
+
+      <button class="btn-text">see more <span>&rarr;</span></button>
+    </section>
+
+    <section class="team">
+      <div class="team__left">
+        <div class="team__text-box">
+          <p class="team__top-text">Meet the team</p>
+          <h3 class="heading-secondary">We are chilled and a laidback team</h3>
+          <p class="team__bottom-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </div>
+      <div class="team__right">
+        <div class="team__pictures">
+          <img src="/images/person1.png" alt="" class="team__img-1" />
+          <img src="/images/person2.png" alt="" class="team__img-2" />
+          <img src="/images/person2.png" alt="" class="team__img-3" />
+        </div>
+      </div>
+    </section>
+
+    <section class="clients">
+      <figure class="review">
+        <blockquote class="review__text">
+          “Fast and outstanding resutls. Edie understands their customer’s needs. They have a young and talented team.”
+        </blockquote>
+
+        <figcaption class="review__client">
+          <img class="review__photo" src="/images/person4.png" alt="" />
+          <div class="review__box">
+            <p class="review__name">Carlos Tran</p>
+            <p class="review__company">The Decorate Gatsby</p>
+          </div>
+        </figcaption>
+      </figure>
+    </section>
+
+    <footer class="footer">
+      <nav class="footer__navigation">
+        <ul class="footer__list">
+          <li class="footer__item"><a href="#" class="footer__link">Home</a></li>
+          <li class="footer__item"><a href="#" class="footer__link">Services</a></li>
+          <li class="footer__item"><a href="#" class="footer__link">Our Works</a></li>
+          <li class="footer__item"><a href="#" class="footer__link">Clients</a></li>
+          <li class="footer__item"><a href="#" class="footer__link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer__sosial">
+        <h3 class="heading-secondary heading-secondary--bold">Edie</h3>
+        <img src="/images/instagram.svg" alt="instagram logo" />
+        <img src="/images/linkedin.svg" alt="linkedin logo" />
+        <img src="/images/twitter.svg" alt="twitter logo" />
+      </div>
+
+      <div class="footer__contact">
+        <form action="" class="contact">
+          <p class="contact__text">Want us to contact you?</p>
+          <input class="contact__input" type="email" placeholder="Email" />
+          <button class="contact__button">Join</button>
+        </form>
+      </div>
+    </footer>
+  </body>
 </html>

@@ -26,22 +26,28 @@
     </header>
 
     <section class="home">
-      <p class="home__message">Unhappy with your website?</p>
-      <h2 class="heading-primary">We create beautiful and fast web services</h2>
+      <div class="home__box">
+        <p class="home__message">Unhappy with your website?</p>
+        <h1 class="heading-primary">We create beautiful and fast web services</h1>
+      </div>
       <div class="home__hero">
         <img src="/images/heroImage.jpg" alt="" class="home__img" />
       </div>
-      <h2 class="heading-secondary">Story, emotion and purpose</h2>
-      <p class="home__text">
-        We help transform your ideas into real world applications that will outperform your toughest competition and
-        help you achieve your strategic goals in short period of time.
-      </p>
+      <div class="home__box">
+        <h2 class="heading-primary">Story, emotion and purpose</h2>
+        <p class="home__text">
+          We help transform your ideas into real world applications that will outperform your toughest competition and
+          help you achieve your strategic goals in short period of time.
+        </p>
 
-      <form action="" class="contact">
-        <p class="contact__text">Want us to contact you?</p>
-        <input class="contact__input" type="email" placeholder="Email" />
-        <button class="contact__button">Join</button>
-      </form>
+        <div class="contact">
+          <p class="contact__text">Want us to contact you?</p>
+          <form action="" class="contact__form">
+            <input class="contact__input" type="email" placeholder="Email" />
+            <button class="contact__button">Join</button>
+          </form>
+        </div>
+      </div>
     </section>
 
     <section class="services">
@@ -173,11 +179,13 @@
       </div>
 
       <div class="footer__contact">
-        <form action="" class="contact">
+        <div class="contact">
           <p class="contact__text">Want us to contact you?</p>
-          <input class="contact__input" type="email" placeholder="Email" />
-          <button class="contact__button">Join</button>
-        </form>
+          <form action="" class="contact__form">
+            <input class="contact__input" type="email" placeholder="Email" />
+            <button class="contact__button">Join</button>
+          </form>
+        </div>
       </div>
     </footer>
   </body>

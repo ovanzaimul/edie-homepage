@@ -1,0 +1,12 @@
+@import 'abstracts/variables';
+
+@import 'base/reset';
+@import 'base/typography';
+
+@import 'components/contact.scss';
+@import 'components/service';
+
+@import 'layouts/header';
+@import 'layouts/home';
+@import 'layouts/navigation';
+@import 'layouts/services';

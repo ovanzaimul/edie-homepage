@@ -4,8 +4,10 @@ html {
 
 body {
   box-sizing: border-box;
-  max-width: 1400px;
   margin: 0 auto;
+}
+body > * {
+  max-width: 1400px;
 }
 
 *,
@@ -50,6 +52,9 @@ body {
   color: #828282;
   font-size: 1.4rem;
   margin-bottom: 0.9rem;
+}
+.contact__text--light {
+  color: #f2f2f2;
 }
 .contact__form {
   display: flex;
@@ -209,6 +214,41 @@ body {
   margin: 15rem 0;
 }
 
+.footer {
+  padding-top: 4.6rem;
+  padding-bottom: 15rem;
+  background-color: #100e1d;
+  display: flex;
+  justify-content: space-around;
+}
+.footer__list {
+  list-style-type: none;
+}
+.footer__item {
+  margin-bottom: 0.5rem;
+}
+.footer__link:link, .footer__link:visited {
+  text-decoration: none;
+  color: #ffffff;
+  line-height: 200%;
+  font-size: 1.8rem;
+  display: inline-block;
+}
+.footer__logo {
+  font-family: "Heebo", sans-serif;
+  font-weight: 800;
+  color: #f2f2f2;
+  font-size: 3.6rem;
+  line-height: 3.6rem;
+  margin-bottom: 1rem;
+}
+.footer__icon-box {
+  display: flex;
+  align-items: center;
+}
+.footer__icon:not(:last-child) {
+  margin-right: 1.1rem;
+}
 .header {
   height: 10rem;
   display: flex;

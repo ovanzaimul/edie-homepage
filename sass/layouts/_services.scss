@@ -1,14 +1,22 @@
 .services {
   // margin: 20rem;
   // padding: 0 20rem;
-  margin: 10rem;
+  margin: 15rem 0;
   padding: 0 10rem;
 
-  display: grid;
-  grid-template-rows: repeat(2, min-content);
-  grid-template-columns: repeat(auto-fit, 34rem);
+  // display: grid;
+  // grid-template-rows: repeat(2, min-content);
+  // grid-template-columns: repeat(auto-fit, 341px);
+  // justify-content: center;
 
-  gap: 3.5rem 4.2rem;
+  // gap: 3.5rem 4.2rem;
+
+  &__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3.5rem 4.2rem;
+  }
 
   & > h3 {
     max-width: 34.6rem;

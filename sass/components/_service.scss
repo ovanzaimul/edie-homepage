@@ -1,3 +1,76 @@
 .service {
+  // max-width: 34.1rem;
+  width: 30rem;
   padding: 4.6rem 3.4rem;
+
+  transition: all 0.2s;
+
+  & > h4 {
+    margin-bottom: 2.4rem;
+  }
+
+  &__icon-box {
+    width: 6.7rem;
+    height: 6.7rem;
+    border-radius: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 3.5rem;
+
+    &--blue {
+      background-color: $color-primary;
+    }
+
+    &--green {
+      background-color: $color-tertiary;
+    }
+
+    &--red {
+      background-color: $color-secondary;
+    }
+  }
+
+  &__icon {
+    font-size: 3rem;
+    line-height: 2.4rem;
+    color: $color-white;
+  }
+
+  &__text {
+    max-width: 27.3;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: $color-grey-light-1;
+
+    margin-bottom: 3.9rem;
+  }
+
+  &__btn {
+    background-color: $color-grey-light-3;
+    padding: 0.9rem 1.2rem;
+    border: 0;
+    border-radius: 1.2rem;
+    line-height: 2.4rem;
+    font-weight: 500;
+    color: $color-grey-light-2;
+    transition: all 0.2s;
+    cursor: pointer;
+
+    &:focus {
+      outline: 0;
+    }
+  }
+
+  &:hover {
+    background-color: $color-white;
+    box-shadow: 0px 10px 30px rgba(51, 51, 51, 0.1);
+    border-radius: 2.4rem;
+
+    .service__btn {
+      background-color: $color-primary;
+      color: $color-white;
+    }
+  }
 }

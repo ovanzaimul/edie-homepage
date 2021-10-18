@@ -6,8 +6,8 @@
   display: flex;
   justify-content: space-around;
 
-  &__navigation {
-  }
+  // &__navigation {
+  // }
 
   &__list {
     list-style-type: none;
@@ -29,8 +29,8 @@
     }
   }
 
-  &__social {
-  }
+  // &__social {
+  // }
 
   &__logo {
     font-family: $font-logo;
@@ -52,11 +52,11 @@
       margin-right: 1.1rem;
     }
 
-    &--1 {
-    }
-    &--2 {
-    }
-    &--3 {
-    }
+    // &--1 {
+    // }
+    // &--2 {
+    // }
+    // &--3 {
+    // }
   }
 }

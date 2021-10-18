@@ -1,0 +1,16 @@
+.container {
+  display: grid;
+  grid-template-columns: [full-start] 1fr [center-start] minmax(400px, 1400px) [center-end] 1fr [full-end];
+
+  & > * {
+    grid-column: center-start / center-end;
+  }
+
+  & > .footer {
+    grid-column: full-start / full-end;
+  }
+
+  & > .header {
+    grid-column: full-start / full-end;
+  }
+}

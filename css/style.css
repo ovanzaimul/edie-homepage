@@ -4,6 +4,8 @@ html {
 
 body {
   box-sizing: border-box;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 *,
@@ -85,6 +87,37 @@ body {
 }
 .contact__button:focus {
   outline: 0;
+}
+
+.review__text {
+  font-size: 3.6rem;
+  line-height: 5.4rem;
+  font-weight: 500;
+  color: #333333;
+  max-width: 93rem;
+  margin-bottom: 3.6rem;
+}
+.review__client {
+  display: flex;
+  align-items: flex-start;
+}
+.review__photo {
+  width: 8.2rem;
+  margin-right: 2.9rem;
+  border-radius: 1.2rem;
+}
+.review__name {
+  color: #333333;
+  font-size: 2.4rem;
+  line-height: 3.6rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+.review__company {
+  color: #828282;
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 2.7rem;
 }
 
 .service {
@@ -169,6 +202,11 @@ body {
   font-size: 2.4rem;
   line-height: 3.6rem;
   color: #333333;
+}
+
+.clients {
+  padding: 0 10rem;
+  margin: 15rem 0;
 }
 
 .header {
@@ -286,6 +324,53 @@ body {
 .services > h3 {
   max-width: 34.6rem;
   grid-column: 1/-1;
+}
+
+.team {
+  padding: 0 10rem;
+  margin: 10rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.team__text-box {
+  max-width: 28rem;
+}
+.team__top-text {
+  color: #eb5757;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 2.7rem;
+  margin-bottom: 0.7rem;
+}
+.team__bottom-text {
+  color: #4f4f4f;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  margin-top: 1.4rem;
+}
+.team__gallery {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(2, minmax(16rem, 29rem));
+  align-items: center;
+  gap: 2.4rem;
+}
+.team__img {
+  width: 100%;
+  border-radius: 2.4rem;
+}
+.team__img--1 {
+  grid-column: 2/-1;
+  align-self: end;
+}
+.team__img--2 {
+  grid-column: 2/-1;
+  width: 110%;
+}
+.team__img--3 {
+  grid-column: 1/2;
+  grid-row: 1/3;
 }
 
 /*# sourceMappingURL=style.css.map */

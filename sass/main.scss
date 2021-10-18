@@ -3,12 +3,15 @@
 @import 'base/reset';
 @import 'base/typography';
 
-@import 'components/contact.scss';
+@import 'components/contact';
+@import 'components/review';
 @import 'components/service';
-@import 'components/project.scss';
+@import 'components/project';
 
+@import 'layouts/clients';
 @import 'layouts/header';
 @import 'layouts/home';
 @import 'layouts/projects';
 @import 'layouts/navigation';
 @import 'layouts/services';
+@import 'layouts/team';

@@ -1,10 +1,16 @@
 .footer {
-  padding-top: 4.6rem;
-  padding-bottom: 15rem;
+  padding: 4.6rem 0 15rem;
   background-color: $color-dark-blue;
 
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
+
+  @include respond(small-phone) {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 4.6rem 4rem 15rem;
+  }
 
   // &__navigation {
   // }
@@ -29,8 +35,11 @@
     }
   }
 
-  // &__social {
-  // }
+  &__social {
+    @include respond(small-phone) {
+      margin: 5rem 0;
+    }
+  }
 
   &__logo {
     font-family: $font-logo;

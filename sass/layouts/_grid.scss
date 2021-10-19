@@ -13,4 +13,10 @@
   & > .header {
     grid-column: full-start / full-end;
   }
+
+  // @include respond(tab-port) {
+  //   & > * {
+  //     grid-column: full-start / full-end;
+  //   }
+  // }
 }

@@ -278,7 +278,7 @@ body {
 
 .container {
   display: grid;
-  grid-template-columns: [full-start] 1fr [center-start] minmax(400px, 1400px) [center-end] 1fr [full-end];
+  grid-template-columns: [full-start] 1fr [center-start] minmax(300px, 1400px) [center-end] 1fr [full-end];
 }
 .container > * {
   grid-column: center-start/center-end;
@@ -296,6 +296,11 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 0 5rem;
+}
+@media only screen and (max-width: 43.75em) {
+  .header {
+    padding: 0 2rem;
+  }
 }
 .header__logo {
   font-family: "Heebo", sans-serif;
@@ -365,7 +370,7 @@ body {
 }
 @media only screen and (max-width: 43.75em) {
   .projects {
-    grid-template-columns: 50rem;
+    grid-template-columns: minmax(30rem, 50rem);
   }
 }
 @media only screen and (max-width: 62.5em) {
@@ -408,6 +413,11 @@ body {
     grid-column: 1/-1;
   }
 }
+@media only screen and (max-width: 26.7em) {
+  .projects .btn-text {
+    margin-top: 0;
+  }
+}
 .projects .btn-text:focus {
   outline: 0;
 }
@@ -426,6 +436,81 @@ body {
   color: #333333;
   display: inline-block;
 }
+.nav #nav__check {
+  display: none;
+}
+@media only screen and (max-width: 43.75em) {
+  .nav__list {
+    display: none;
+  }
+  .nav__btn {
+    z-index: 10;
+  }
+  .nav__btn label {
+    width: 24px;
+    padding: 6px 3px;
+    cursor: pointer;
+    display: block;
+  }
+  .nav__btn span {
+    color: #000000;
+    background-color: currentColor;
+    display: block;
+    width: 100%;
+    height: 2px;
+    border-radius: 12px;
+    position: relative;
+  }
+  .nav__btn span::before {
+    content: "";
+    position: absolute;
+    border-radius: 12px;
+    background-color: currentColor;
+    top: -6px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+  }
+  .nav__btn span::after {
+    content: "";
+    position: absolute;
+    border-radius: 12px;
+    background-color: currentColor;
+    top: 6px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+  }
+  #nav__check:checked + .nav__btn label span {
+    color: #ffffff;
+  }
+  #nav__check:checked + .nav__btn {
+    position: fixed;
+    right: 2rem;
+    top: 4rem;
+  }
+  #nav__check:checked ~ .nav__list {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: #2d9cdb;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #nav__check:checked ~ .nav__list .nav__item:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 3rem;
+  }
+  #nav__check:checked ~ .nav__list .nav__link {
+    font-size: 3rem;
+  }
+}
+
 .services {
   margin: 15rem 0;
   padding: 0 10rem;

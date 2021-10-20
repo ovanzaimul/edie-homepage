@@ -20,7 +20,96 @@
     display: inline-block;
   }
 
-  @include respond(tab-port) {
-    // display: none;
+  // responsive navbar
+
+  #nav__check {
+    display: none;
+  }
+
+  @include respond(phone) {
+    &__list {
+      display: none;
+    }
+
+    &__btn {
+      z-index: 10;
+
+      label {
+        width: 24px;
+        // height: 24px;
+        padding: 6px 3px;
+        cursor: pointer;
+        display: block;
+      }
+
+      span {
+        color: $color-black;
+        background-color: currentColor;
+        display: block;
+        width: 100%;
+        height: 2px;
+        border-radius: 12px;
+
+        position: relative;
+
+        &::before {
+          content: '';
+          position: absolute;
+          border-radius: 12px;
+          background-color: currentColor;
+          top: -6px;
+          left: 0;
+          width: 100%;
+          height: 2px;
+        }
+
+        &::after {
+          content: '';
+          position: absolute;
+          border-radius: 12px;
+          background-color: currentColor;
+          top: 6px;
+          left: 0;
+          width: 100%;
+          height: 2px;
+        }
+      }
+    }
+
+    #nav__check:checked + &__btn label span {
+      color: $color-white; // the color of the burger menu button
+    }
+    #nav__check:checked + &__btn {
+      position: fixed;
+      right: 2rem;
+      top: 4rem;
+    }
+
+    #nav__check:checked ~ &__list {
+      position: fixed;
+      // top: 10rem;
+      top: 0;
+      left: 0;
+      // height: calc(100vh - 10rem);
+      height: 100vh;
+      width: 100%;
+      background-color: $color-primary;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .nav__item {
+        &:not(:last-child) {
+          margin-right: 0;
+          margin-bottom: 3rem;
+        }
+      }
+
+      .nav__link {
+        font-size: 3rem;
+      }
+    }
   }
 }

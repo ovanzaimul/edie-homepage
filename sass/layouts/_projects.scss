@@ -10,7 +10,7 @@
   // column-gap: 2rem;
 
   @include respond(phone) {
-    grid-template-columns: 50rem;
+    grid-template-columns: minmax(30rem, 50rem);
   }
 
   @include respond(tab-port) {
@@ -51,6 +51,9 @@
 
     @include respond(phone) {
       grid-column: 1/-1;
+    }
+    @include respond(smallest-phone) {
+      margin-top: 0;
     }
 
     &:focus {
